@@ -27,14 +27,13 @@ export default {};
 <style lang="scss" scoped>
 @import "../assets/scss/config.scss";
 .header-wrapper {
-  min-height: 40px;
-  line-height: 40px;
+  min-height: 30px;
   background-color: $color_D;
   padding: 10px 20px;
   &__header {
     display: flex;
-    // align-items: center;
     color: $color_A;
+    font-size: 16px;
   }
   &__header_mobile {
     display: flex;
@@ -43,8 +42,9 @@ export default {};
     justify-content: space-between;
   }
   &__header-icon {
-    font-size: 30px;
+    font-size: 3rem;
     cursor: pointer;
+    padding: 0px;
   }
 }
 </style>
