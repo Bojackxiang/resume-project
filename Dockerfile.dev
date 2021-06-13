@@ -1,0 +1,9 @@
+FROM node:14.14.0-alpine
+WORKDIR '/app'
+COPY ./package.json ./
+RUN npm install
+COPY . .
+CMD ["yarn", "serve"]
+
+# docker build -t batmandocode/resume -f Dockerfile.dev .
+# docker run -p 3030:8080 batmandocode/resume 
