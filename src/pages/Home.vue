@@ -6,7 +6,12 @@
 
 <script>
   export default {
-    
+    created() {
+      console.log('[HOME] IS CREATED');
+    },    
+    destroyed() {
+      console.log('[HOME] IS DESTROYED');
+    },
   }
 </script>
 

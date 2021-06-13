@@ -2,39 +2,44 @@
   <div id="app">
     <div class="wrapper">
       <div class="wrapper__header">
-        <Header/>
+        <Header />
       </div>
       <div class="wrapper__body">
         <div class="wrapper__body__content">
-          <router-view/>
+          <!-- 保留数据页面 -->
+          <keep-alive>
+            <router-view v-if="$route.meta.keepAlive" />
+          </keep-alive>
+          <!-- 不保留数据页面 -->
+          <router-view v-if="!$route.meta.keepAlive" />
         </div>
       </div>
       <div class="wrapper__footer">
-        <Footer/>
+        <Footer />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 export default {
   name: "App",
   components: {
-    Header, 
-    Footer
-  }
+    Header,
+    Footer,
+  },
 };
 </script>
 
 <style lang="scss">
 * {
-  margin: 0; 
+  margin: 0;
   padding: 0;
   font-size: 10px;
 }
-#app{
+#app {
   padding: 0;
   margin: 0;
 }
