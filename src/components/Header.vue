@@ -3,7 +3,12 @@
     <el-row>
       <el-col :span="24" class="hidden-sm-and-down">
         <div class="header-wrapper__header">
-          <p>hello</p>
+          <p>desktop</p>
+        </div>
+      </el-col>
+      <el-col :span="24" class="hidden-md-and-up">
+        <div class="header-wrapper__header">
+          <p>mobile</p>
         </div>
       </el-col>
     </el-row>
