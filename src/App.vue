@@ -42,8 +42,6 @@ body{
   flex-direction: column;
   min-height: 100vh;
   &__header {
-    height: 50px;
-    background-color: red;
   }
   &__body {
     flex: 1;
