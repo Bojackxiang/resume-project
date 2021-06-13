@@ -1,6 +1,6 @@
 <template>
   <div>
-    footer
+    home
   </div>
 </template>
 

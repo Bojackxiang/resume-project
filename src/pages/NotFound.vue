@@ -1,6 +1,6 @@
 <template>
   <div>
-    footer
+    not found
   </div>
 </template>
 
