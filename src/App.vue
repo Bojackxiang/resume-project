@@ -24,12 +24,17 @@
 <script>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
+import actions from './store/actions'
+
 export default {
   name: "App",
   components: {
     Header,
     Footer,
   },
+  created(){
+    this.$store.dispatch(actions.LOGIN)
+  }
 };
 </script>
 
