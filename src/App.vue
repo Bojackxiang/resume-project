@@ -57,7 +57,6 @@ export default {
   &__body {
     flex: 1;
     background-color: azure;
-    padding: 100px;
   }
   &__footer {
     height: 150px;
