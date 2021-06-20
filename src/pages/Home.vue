@@ -3,9 +3,9 @@
     <PageWrapper>
       <div>what ever</div>
       <AppButton :type="'primary'">
-        <template v-slot:text="props">
+        <template v-slot:text="slotProps">
           <!-- REVIEW 这边外面多封装了一层  -->
-          {{props.btnData.text}}
+          {{slotProps.btnData.text}}
         </template>
         <template v-slot:icon>
           icon
