@@ -3,11 +3,13 @@
     <PageWrapper> 
       <el-row>
         <!-- left column -->
-        <el-col :sm="16" :xs="24">
-          <div class="left-col"></div>
+        <el-col :sm="17" :xs="24">
+          <div class="left-col">
+            <NameContainer :firstName="firstName" :lastName="lastName" :title="title"/>
+          </div>
         </el-col>
         <!-- right column -->
-        <el-col :sm="8" :xs="24">
+        <el-col :sm="7" :xs="24">
           <div class="right-col"></div>
         </el-col>
       </el-row>
@@ -29,11 +31,20 @@
 <script>
 import AppButton from '../components/AppButton.vue';
 import PageWrapper from "../page-wrapper/PageWrapper.vue";
+import NameContainer from '../components/NameContainer.vue'
 
 export default {
   components: {
     PageWrapper,
     AppButton,
+    NameContainer,
+  },
+  data(){
+    return {
+      firstName: 'Alex',
+      lastName: 'Xiang',
+      title: "Full Stack Engineer"
+    }
   },
   created() {
     console.log;
@@ -47,13 +58,10 @@ export default {
 
 <style lang="scss" scoped>
 .left-col{
-  width: 100%;
   background-color: antiquewhite;
-  height: 20px;
+  padding-left: 4rem;
 }
 .right-col{
-  width: 100%;
   background-color:aquamarine;
-  height: 20px;
 }
 </style>

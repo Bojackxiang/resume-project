@@ -13,7 +13,6 @@ export default {};
 
 <style lang="scss" scoped>
 .page-wrapper {
-  color: green;
   // 小于1000 px 的时候
   width: 100%;
   background-color: lightblue;
@@ -24,7 +23,6 @@ export default {};
     background-color: lightgoldenrodyellow;
     width: 100%;
     max-width: 1200px;
-    color: red;
   }
 }
 </style>
