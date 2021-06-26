@@ -1,50 +1,48 @@
 ]<template>
   <div>
-    <PageWrapper> 
+    <PageWrapper>
       <el-row>
         <!-- left column -->
         <el-col :sm="17" :xs="24">
           <div class="left-col">
-            <NameContainer :firstName="firstName" :lastName="lastName" :title="title"/>
+            <NameContainer
+              :firstName="firstName | uppercase"
+              :lastName="lastName | uppercase"
+              :title="title"
+            />
+            <intro :title="'Education'">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </intro>
           </div>
         </el-col>
         <!-- right column -->
         <el-col :sm="7" :xs="24">
-          <div class="right-col"></div>
+          <div class="right-col">
+            
+          </div>
         </el-col>
       </el-row>
-
-      <div>what ever</div>
-      <AppButton :type="'primary'">
-        <template v-slot:text="slotProps">
-          <!-- REVIEW 这边外面多封装了一层  -->
-          {{slotProps.btnData.text}}
-        </template>
-        <template v-slot:icon>
-          icon
-        </template>
-      </AppButton>
     </PageWrapper>
   </div>
 </template>
 
 <script>
-import AppButton from '../components/AppButton.vue';
 import PageWrapper from "../page-wrapper/PageWrapper.vue";
-import NameContainer from '../components/NameContainer.vue'
+import NameContainer from "../components/NameContainer.vue";
+import Intro from '../components/Intro.vue';
 
 export default {
   components: {
     PageWrapper,
-    AppButton,
     NameContainer,
+    Intro,
   },
-  data(){
+  data() {
     return {
-      firstName: 'Alex',
-      lastName: 'Xiang',
-      title: "Full Stack Engineer"
-    }
+      firstName: "Alex",
+      lastName: "Xiang",
+      title: "Full Stack Engineer",
+    };
   },
   created() {
     console.log;
@@ -57,11 +55,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.left-col{
-  background-color: antiquewhite;
-  padding-left: 4rem;
+.left-col {
 }
-.right-col{
-  background-color:aquamarine;
+.right-col {
+  background-color: aquamarine;
 }
 </style>

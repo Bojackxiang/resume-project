@@ -24,7 +24,7 @@
 <script>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
-import actions from './store/actions'
+import actions from "./store/actions";
 
 export default {
   name: "App",
@@ -32,19 +32,21 @@ export default {
     Header,
     Footer,
   },
-  created(){
-    this.$store.dispatch(actions.LOGIN)
-  }
+  created() {
+    this.$store.dispatch(actions.LOGIN);
+  },
 };
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css2?family=Castoro&display=swap");
+@import "./assets/scss/config.scss";
 * {
   margin: 0;
   padding: 0;
   font-size: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 #app {
   padding: 0;
@@ -59,7 +61,7 @@ export default {
   }
   &__body {
     flex: 1;
-    background-color: azure;
+    background-color: $color_G;
   }
   &__footer {
     height: 150px;

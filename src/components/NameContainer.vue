@@ -34,15 +34,17 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/config.scss";
 .name-wrapper {
+  padding-left: 4rem;
   min-height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: $color_E;
-  font-weight: bold;
+
   .large-text-wrapper {
-    margin-bottom: -3rem;
+    margin-bottom: -2.5rem;
     .large-text {
+      font-weight: bold;
       color: $color_E;
       font-size: 6rem;
     }
@@ -51,7 +53,7 @@ export default {
     margin-top: 4rem;
     .small-text {
       color: $color_E;
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 }

@@ -11,8 +11,13 @@ Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 
+// 在这边可以全聚德使用 filters 
+Vue.filter('uppercase', function (textValue) {
+  return textValue.toString().toUpperCase()
+})
+
 new Vue({
-  store, 
-  router: routers, 
+  store,
+  router: routers,
   render: h => h(App),
 }).$mount('#app')
