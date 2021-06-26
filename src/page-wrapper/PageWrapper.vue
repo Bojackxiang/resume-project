@@ -16,17 +16,14 @@ export default {};
   color: green;
   // 小于1000 px 的时候
   width: 100%;
-  padding: 0 15px;
   background-color: lightblue;
-  width: 100%;
-  padding: 0 15px;
+  box-sizing: border-box;
   @media screen and (min-width: 1200px) {
-    // 大于 1000 px 的时候
+    // 大于 1200 px 的时候
     margin: 0 auto;
     background-color: lightgoldenrodyellow;
     width: 100%;
-
-    max-width: 1000px;
+    max-width: 1200px;
     color: red;
   }
 }

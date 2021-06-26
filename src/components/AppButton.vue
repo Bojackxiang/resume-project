@@ -47,6 +47,6 @@ export default {
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: bold;
-
+  cursor: pointer;
 }
 </style>

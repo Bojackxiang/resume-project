@@ -43,10 +43,12 @@ export default {
   margin: 0;
   padding: 0;
   font-size: 10px;
+  
 }
 #app {
   padding: 0;
   margin: 0;
+  position: relative;
 }
 .wrapper {
   display: flex;
