@@ -35,7 +35,7 @@ export default {
 @import "../assets/scss/config.scss";
 .name-wrapper {
   padding-left: 4rem;
-  min-height: 30rem;
+  margin: 5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

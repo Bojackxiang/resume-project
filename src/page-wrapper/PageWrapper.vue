@@ -19,6 +19,7 @@ export default {};
   box-sizing: border-box;
   @media screen and (min-width: 1200px) {
     // 大于 1200 px 的时候
+    min-height: 100%;
     margin: 0 auto;
     background-color: lightgoldenrodyellow;
     width: 100%;
