@@ -68,7 +68,6 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/config.scss";
 .home-page-wrapper {
-  background-color: blue;
   .left-col {
     min-height: calc(100vh - 100px);
   }
